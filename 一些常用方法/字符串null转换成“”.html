@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+		let data = {
+			a:null,
+			b:null,
+			e:[{
+				naem:null,
+				naem2:'xiaomin',
+			}],
+			c:null,
+			d:null,
+			h:{
+				hh:null,
+				jj:''
+			}
+		}
+		data =  nullStr(data);
+		console.log(data,'a:null;');
+		function nullStr(data){
+			for(let i in data){
+				if(data[i] === null ){
+					data[i] = "";
+				} else {
+					if(Array.isArray(data[i])){
+						data[i] = data[i].map(z=>{
+							return nullStr(z)
+						})
+					}
+				}
+				if(typeof(data[i]) === 'object'){
+					data[i] = nullStr(data[i])
+				}
+			}
+			return data;
+		}
+	</script>
+</html>

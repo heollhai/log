@@ -1,0 +1,29 @@
+*props使用
+一.弹框(el-dialog)
+	
+
+	
+	
+	
+*props使用:
+	  :options="options"//原数据
+	   :props="{value:'name',label:'name1',children:'chil',multiple: true, checkStrictly: true}"//类似配置元数据别名
+	   clearable
+	   
+	   //涉及到合并数据可以尝试这样增加
+	   this.optionProps.forEach((ele,index)=>{
+		ele.chil = [...this.options]
+	   })
+	   console.log(this.optionProps)	
+	
+一.弹框(el-dialog)
+	属性:
+		 close-on-click-modal  				//是否可以通过点击 modal 关闭 Dialog   默认true (意思不能点空白处关闭弹框)
+		 visible.sync 						//  是否显示弹框		(可以更改默认用的)
+			例如:	:visible.sync="evnReadDialog"			name如果evnReadDialog为true那么弹框显示，，false不显示
+			
+			
+三、表格 
+	this.$refs.planList.store.states.selection  //获取表格选中行的数据；
+	
+	
