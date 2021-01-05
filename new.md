@@ -1,4 +1,4 @@
-##	一、github
+##	一、账号，密码
 ##	二、git 
 ##	三、css3动画效果、媒体查询
 ##	四 、项目常用单词（Utils，转换，拷贝，flex，继承）
@@ -28,8 +28,9 @@
 ## 调出打印     window.print();
 ## 鼠标放上效果  cursor: default;//放上正常效果  cursor:pointer //鼠标方法手的形状;
 
-##	一、github
-	账号：heollhai		密码：a4311281997
+##	一、账号，密码
+	github: 账号：heollhai			密码：	a4311281997
+	xiaod:		1768827067						a4881351	
 
 ##	二、git
 	1、git 上传：
@@ -581,7 +582,6 @@ sss##	三、css3动画效果
 	  //添加这个方法在写事件，，可以解决冒泡问题
 	}
 ##	二十、set的使用
-	<!-- 
 	一 :
 		  1. this.items[0] ---------	需要更改data里面的数组
 		  2. message	   ---------	需要更改的数组里面的字段
@@ -590,7 +590,6 @@ sss##	三、css3动画效果
 		  1. this.items 					---------	需要更改data里面的数组
 		  2. 0	   							---------	需要更改的数组的下标
 		  3. {message:'first',id:'4'}	    ---------	需要替换的数组里面的新值
-	 -->
   1. 	this.$set(this.items[0],"message","新值") 
   2. 	this.$set(this.items,0,{message:'first',id:'4'}) 
 ##	二十一、判断是数组还是对象:
