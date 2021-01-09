@@ -21,6 +21,8 @@
 ##	二十一、判断是数组还是对象
 
 ## 常用方法:
+##   height: 100vh;     // vh是屏幕高度
+##   element ui 一般使用的3中大小尺寸 : medium / small / mini
 ## 高度设置自适应其中一种方式 height: 'calc(100% - 20px)'//高100%在少20px
 ## box-shadow: 10px 10px 5px #888888;  阴影效果
 ## 超出显示三个点：
