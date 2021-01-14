@@ -19,6 +19,9 @@
 ##	十九、捕获，冒泡
 ##	二十、set的使用
 ##	二十一、判断是数组还是对象
+##	二十二、echarts 图表
+##	二十三、查看数组里面的数据的方法集合
+
 
 ## 常用方法:
 ##   height: 100vh;     // vh是屏幕高度
@@ -29,7 +32,7 @@
 		overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
 ## 调出打印     window.print();
 ## 鼠标放上效果  cursor: default;//放上正常效果  cursor:pointer //鼠标方法手的形状;
-
+### Object.keys(arr);  取出数组里面的所有key
 ##	一、账号，密码
 	github: 账号：heollhai			密码：	a4311281997
 	xiaod:		1768827067						a4881351	
@@ -73,7 +76,7 @@
 	4、常用命令
 		git init 初始化
 		git clone 克隆代码库
-		git clone -b dev(dev是分支名称s) 克隆代码库
+		git clone -b dev 项目地址 		(dev是分支名称) 克隆代码库
 		git config 配置
 		git add 增加文件到暂存区
 		git commit 提交暂存区到仓库
@@ -458,6 +461,7 @@ sss##	三、css3动画效果
 ##	十一、路由守卫
 	vue路由守卫:
 		组件独享守卫:
+			进入组件时:
 			beforeRouteEnter:(to,from,next)=>{ 	//使用为如果是从/discover过来的话，，那么执行 vm.shuaxin() 这个方法
 				if(from.path==="/discover"){
 				  next(vm =>{ //这样可以调用this    此处的vm代表this
@@ -466,6 +470,11 @@ sss##	三、css3动画效果
 				}
 				next()
 			}
+			离开时:
+			beforeRouteLeave (to, from, next) {
+			    // 导航离开该组件的对应路由时调用
+			    // 可以访问组件实例 `this`
+			  }
 ##	十二、watch监听事件
 	https://www.cnblogs.com/yesu/p/9546458.html
 	deep: true  //
@@ -599,3 +608,18 @@ sss##	三、css3动画效果
    2. 	使用 constructor	判断		例: a.constructor === Array; 
    3. 	使用 prototype		判断		例: a.prototype === Array;
    4. 	使用 Array.isArray(a)
+##	二十二、echarts 图表
+	echarts   x轴显示不全解决方案		[](http://blog.csdn.net/kebi007/article/details/68488694)
+##	二十三、查看数组里面的数据的方法集合
+	arr1 = [{"name":"1",age:'1'},{"name":"2"},{"name":"3"},{"name":"4"}]
+	
+	
+	let name = "1";
+	let a = arr1.filter(res => res.name === name);
+	console.log(a, "kkkkkkkkkkkkkk ");//a = [{{"name":"1",age:'1'}] 
+	
+	let b = Object.keys(arr1[0]);
+	consoel.log(b) //   b = ["name","age"]
+	
+	let c = arr1.map(ele => ele["name"]);
+	console.log(c)  c = ["1", "2", "3", "4"]
