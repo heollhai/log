@@ -1,4 +1,8 @@
 ## 一、常用到的es6
+## 二、keep-alive的使用
+## 三、v-model 双向绑定原理
+## 四、判断对象是否为空
+## 五、判断对象里面某个值是否存在
 
 
 
@@ -36,6 +40,7 @@
 			它的值是唯一的，不可变的 	例如: 	
 				var sym = Symbol( "some optional description" );
 				console.log(typeof sym); // symbol
+				
 ## keep-alive的使用
    1. include  	需要缓存的组件名		exclude 			不需要缓存的组件名
    2. activated 组件激活是调用		deactivated			页面离开时候调用
@@ -50,4 +55,20 @@
 			    <keep-alive include="list">
 			        <router-view></router-view> 
 			     </keep-alive>
- 
+## 三、v-model 双向绑定原理
+	如果使用了v-model  那么等于同时绑定了一个  input  和 value  
+	
+## 四、判断对象是否为空  
+		let object = {}
+		let object1 = {
+			name:'1'
+		}
+	1、	if(Object.keys(object).length == 0){    
+			console.log('是');
+		}
+	2、if(JSON.stringify(object === '{}')){}
+## 五、判断对象里面某个值是否存在	
+	1.	if(object1.name== undefined){			//判断值是不是等于 undefined
+		console.log('是');
+	}
+	2.	if(Object.keys(object).indexOf(值))

@@ -21,6 +21,7 @@
 ##	二十一、判断是数组还是对象
 ##	二十二、echarts 图表
 ##	二十三、查看数组里面的数据的方法集合
+##	二十四、动态设置路由，控制权限
 
 
 ## 常用方法:
@@ -30,6 +31,8 @@
 ## box-shadow: 10px 10px 5px #888888;  阴影效果
 ## 超出显示三个点：
 		overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+##  允许换行	flex-wrap: wrap;
+###  不允许换行	 white-space: nowrap;
 ## 调出打印     window.print();
 ## 鼠标放上效果  cursor: default;//放上正常效果  cursor:pointer //鼠标方法手的形状;
 ### Object.keys(arr);  取出数组里面的所有key
@@ -98,6 +101,7 @@
 sss##	三、css3动画效果
 	Css3的几种动画
 	1、transform转变动画
+		transform: translate(-50%, -50%);	//平移   x y轴平移 -50%
 		transform:rotate(3deg)//旋转3deg
 		transform-origin:20% 40%;//设置旋转元素基点
 		transform-style: preserve-3d;//实现3d效果，具体使用查一下（不常用）
@@ -623,3 +627,14 @@ sss##	三、css3动画效果
 	
 	let c = arr1.map(ele => ele["name"]);
 	console.log(c)  c = ["1", "2", "3", "4"]
+	
+	arr.find 		//方法返回值
+	arr.findIndex	//返回目标索引
+	
+##	二十四、动态设置路由，控制权限
+   1. 	xuex 中 的 mutations 中设置 
+			1.设置添加从后台获取路由菜单  并把菜单保存到cookie中 方法
+			2.设置清除菜单和cookie的方法
+			3.设置添加菜单的方法(因为路径需要拼接):
+   2. 	在登录页面，，登录时向后台获取   路由菜单 
+   3. 	记得在
