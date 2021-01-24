@@ -223,7 +223,10 @@ sss##	三、css3动画效果
 	    8.Yes  （提示是否保存配置）
 	    9.在输入（保存的配置名称）
 	
-	
+	##   如果有选择   Eslint 
+		那么选择   ESLint + Prettier(格式化代码用的)
+		然后选择		Lint on save(格式化并保存)
+		然后选择 	 In dedicated config files(是否独立配置文件)
 	
 	守卫一般创建在mian.js同层   
 	取名为permission.js
@@ -253,6 +256,21 @@ sss##	三、css3动画效果
 	7.import VCharts from 'v-charts';
 	Vue.use(VCharts); （图表）
 	npm install lib-flexible --save   px转rem
+	
+	安装vue add cube-ui  官网:[](https://cube-ui.gitee.io/#/zh-CN/docs/introduction)
+		1.	Still proceed?   是否选择后编译
+		2.	选择	fully, import all the components  全部引用(另外一个是部分引用)
+		3.	自定义主题？
+			? Custom theme? (Y/n)	选择是
+		4.	使用rem？
+			? Use rem layout? (y/N)	选择否
+		使用vw？
+			? Use vw layout? (y/N)	选择否
+		5. Use amfe-flexible?   是否使用动态安装
+
+
+
+
 	
 	
 	
