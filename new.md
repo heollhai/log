@@ -33,8 +33,14 @@
 		overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
 ##  允许换行	flex-wrap: wrap;
 ###  不允许换行	 white-space: nowrap;
-## 调出打印     window.print();
-## 鼠标放上效果  cursor: default;//放上正常效果  cursor:pointer //鼠标方法手的形状;
+##   调出打印     window.print();
+###  鼠标放上效果  cursor: default;//放上正常效果  cursor:pointer //鼠标方法手的形状;
+###  隐藏滚动条
+	.infinite-list::-webkit-scrollbar {
+		display: none;
+	}		
+	
+
 ### Object.keys(arr);  取出数组里面的所有key
 ##	一、账号，密码
 	github: 账号：heollhai			密码：	a4311281997
@@ -623,6 +629,8 @@ sss##	三、css3动画效果
 		  1. this.items 					---------	需要更改data里面的数组
 		  2. 0	   							---------	需要更改的数组的下标
 		  3. {message:'first',id:'4'}	    ---------	需要替换的数组里面的新值
+	三 ：如果是对象
+		  this.$set(需要修改的对象,'对象的属性','值')
   1. 	this.$set(this.items[0],"message","新值") 
   2. 	this.$set(this.items,0,{message:'first',id:'4'}) 
 ##	二十一、判断是数组还是对象:
